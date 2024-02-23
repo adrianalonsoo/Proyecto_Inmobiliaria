@@ -1,0 +1,121 @@
+.listings {
+    background-color: #eeeeee;
+
+    .container {
+        h2 {
+            color: $main-accent-color;
+        }
+
+        .listing-wrapper {
+
+            .listing-item {
+                background-color: #ffffff;
+                margin-bottom: 1.5rem;
+
+                .listing-image {
+                    font-size: 0; 
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        background: rgba(0, 0, 0, .6);
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .listing-meta {
+                        font-size: $font-14;
+                        bottom: 0px;
+                        color: $text-white;
+                        z-index: 10000;
+
+                        .price {
+                            background-color: #ba882aa4;
+                            padding: 10px;
+                            margin-right: 1px;
+                        }
+
+                        .type {
+                            background-color: #ba882aa4;
+                            padding: 10px;
+                        }
+                    }
+                }
+
+                .item-icons {
+
+                    i {
+                        background-color: #ecdec4;
+                        color: $main-accent-color;
+                        font-size: $font-15;
+                        border-radius: 50%;
+                        line-height: 2rem;
+                        width: 2rem;
+                        height: 2rem;
+                        text-align: center;
+                    }
+
+                    p {
+                        line-height: 2.2rem;
+                    }
+                    
+                }
+
+                .listing-footer {
+                    border-top: 1px solid rgba(204, 204, 204, 0.384);
+
+                }
+
+                .listing-footer {
+                    .agent {
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                        }
+
+                        p {
+                            padding-left: 1rem;
+                            line-height: 3rem;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .details {
+                        a {
+                            background-color: #ecdec4;
+                            color: $main-accent-color;
+                            font-size: $font-14;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include bp-md {
+            .listing-wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                .listing-item {
+                    margin-right: 1rem;
+                }
+             }   
+        }
+
+        @include bp-xl {
+            .listing-wrapper {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+    
+}

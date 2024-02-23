@@ -1,0 +1,100 @@
+.categories {
+
+    .container {
+        & > div { // first add this to all cats, then refactor it here
+            background-blend-mode: multiply;
+            color: $text-white;
+
+            p {
+                color: $text-white;
+                font-style: italic;
+            }
+
+            &:hover {
+                background:$main-accent-color;
+                transition: all .3s ease-in-out;
+            }
+        }
+
+        .cat-1 {
+            background: url('../images/family-home.jpg') rgba(0,0,0, 0.5);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 297px;
+        }
+
+        .cat-2 {
+            background: url('../images/luxury-properties.jpg') rgba(0,0,0, 0.5);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 297px;
+        }
+
+        .cat-3 {
+            background: url('../images/apartments.jpg') rgba(0,0,0, 0.5);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 605px;
+        }
+
+        .cat-4 {
+            background: url('../images/offices.jpg') rgba(0,0,0, 0.5);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 297px;
+        }
+    }
+
+    // 992px and above
+    @include bp-lg {
+        .container {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: 
+                "cat-1 cat-2 cat-3"
+                "cat-4 cat-4 cat-3"; 
+
+            & > div { // first add this to all cats, then refactor it here
+                background-size: cover;
+                background-blend-mode: multiply;
+                color: $text-white;
+
+                p {
+                    color: $text-white;
+                    font-style: italic;
+                }
+
+                &:hover {
+                    background:$main-accent-color;
+                    transition: all .3s ease-in-out;
+                }
+            }
+
+            .cat-1 {
+                grid-area: cat-1;
+                background: url('../images/family-home.jpg') rgba(0,0,0, 0.5);
+                height: 297px;
+            }
+    
+            .cat-2 {
+                grid-area: cat-2;
+                background: url('../images/luxury-properties.jpg') rgba(0,0,0, 0.5);
+                height: 297px;
+            }
+    
+            .cat-3 {
+                grid-area: cat-3; 
+                background: url('../images/apartments.jpg') rgba(0,0,0, 0.5);
+                height: 605px;
+            }
+    
+            .cat-4 {
+                grid-area: cat-4;
+                background: url('../images/offices.jpg') rgba(0,0,0, 0.5);
+                height: 297px;
+            }
+    
+        }
+    }
+    
+}

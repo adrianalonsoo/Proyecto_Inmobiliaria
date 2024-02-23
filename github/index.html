@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <title>Luxury villas</title>
+    <link rel="icon" href="assets/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--build:css assets/css/main.min.css-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+</head>
+<body>
+
+    <header id="header">
+        <nav class="container flex flex-jc-sb flex-ai-c">
+            <div class="logo-wrapper">
+                <a href="#">
+                    <img src="assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <!-- Mobile menu -->
+            <div class="mobile-menu-wrapper">
+                <div class="toggler">
+                    <i id="toggler-btn" class="fa-solid fa-bars"></i>
+                </div>
+
+                <div id="mobile-menu" class="mobile-menu container absolute hidden">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Propiedades</a></li>
+                        <li><a href="#">Galería</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Mobile menu ends -->
+
+            <!-- Desktop menu -->
+            <div class="menu-wrapper">
+                <ul class="flex relative">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Propiedades</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Desktop menu ends -->
+        </nav>
+    </header>
+
+    <section class="hero flex flex-jc-c flex-ai-c">
+        <div class="container pt-1 pb-1">
+            <div class="content">
+                <h1 class="text-center mb-2">Encuentra tu casa ideal</h1>
+                <div class="searchbox pt-2 pb-2 grid">
+                    <div class="keyword">
+                        <input type="text" class="" placeholder="Escribe...">
+                    </div>
+                    <div class="custom-select">
+                        <select name="" id="">
+                            <option value="">Tipo Propiedad</option>
+                            <option value="">Casa Familiar</option>
+                            <option value="">Casa Villa</option>
+                            <option value="">Villas</option>
+                        </select>
+                    </div>
+                    <div class="custom-select">
+                        <select name="" id="">
+                            <option value="">Localidad</option>
+                            <option value="">Granada</option>
+                        </select>
+                    </div>
+                    <div class="custom-select">
+                        <select name="" id="">
+                            <option value="">Precio</option>
+                            <option value="">100.000€</option>
+                            <option value="">200.000€</option>
+                            <option value="">300.000€</option>
+                            <option value="">400.000€</option>
+                        </select>
+                    </div>
+
+                    <div class="search-btn">
+                        <a href="#" class="btn">Buscar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories pt-2 pb-2">
+        <div class="container grid grid-gap">
+            <div class="cat-1 flex flex-jc-c flex-ai-c flex-dir-col">
+                <h2>Casas de Familia</h2>
+                <p>15 Resultados</p>
+            </div>
+            <div class="cat-2 flex flex-jc-c flex-ai-c flex-dir-col">
+                <h2>De lujo</h2>
+                <p>10 Resultados</p>
+            </div>
+            <div class="cat-3 flex flex-jc-c flex-ai-c flex-dir-col">
+                <h2>Apartamentos</h2>
+                <p>20 Resultados</p>
+            </div>
+            <div class="cat-4 flex flex-jc-c flex-ai-c flex-dir-col">
+                <h2>Oficinas</h2>
+                <p>12 Resultados</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="listings pt-2 pb-2">
+        <div class="container">
+            <div class="section-title mb-2">
+                <h2 class="text-center">Ultimas Novedades</h2>
+            </div>
+
+            <div class="listing-wrapper">
+                <!-- Vivienda 1 -->
+                <div class="listing-item">
+                    <div class="listing-image relative">
+                        <img src="assets/images/casa7.jpg" alt="Listing" class="img-fluid">
+                        <div class="listing-meta absolute flex">
+                            <div class="price">200.000€</div>
+                            <div class="type">En Venta</div>
+                        </div>
+                    </div>
+                    <div class="item-title pl-1 pr-1 pt-1 pb-1">
+                        <h3>Casa Familiar</h3>
+                    </div>
+                    <div class="address pl-1 pb-1">
+                        <p><i class="fa-solid fa-location-dot"></i> Granada</p>
+                    </div>
+
+                    <div class="item-icons pl-1 pr-1 pb-2 flex flex-jc-sb">
+                        <div class="beds flex">
+                            <i class="fa-solid fa-bed"></i>
+                            <p class="ml-1">3 Hab</p>
+                        </div>
+                        <div class="baths flex">
+                            <i class="fa-solid fa-shower"></i>
+                            <p class="ml-1">2 Baños</p>
+                        </div>
+                        <div class="area flex">
+                            <i class="fa-solid fa-maximize"></i>
+                            <p class="ml-1">100 m2</p>
+                        </div>
+                    </div>
+
+
+                    <div class="listing-footer pt-1 pb-1 flex flex-jc-sb flex-ai-c">
+                        <div class="details pr-1">
+                            <a href="detalle.html" class="btn">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vivienda 2 -->
+                <div class="listing-item">
+                    <div class="listing-image relative">
+                        <img src="assets/images/casa1.jpg" alt="Listing" class="img-fluid">
+                        <div class="listing-meta absolute flex">
+                            <div class="price">200.000€</div>
+                            <div class="type">En Venta</div>
+                        </div>
+                    </div>
+                    <div class="item-title pl-1 pr-1 pt-1 pb-1">
+                        <h3>Villa Rustica</h3>
+                    </div>
+                    <div class="address pl-1 pb-1">
+                        <p><i class="fa-solid fa-location-dot"></i> Granada</p>
+                    </div>
+
+                    <div class="item-icons pl-1 pr-1 pb-2 flex flex-jc-sb">
+                        <div class="beds flex">
+                            <i class="fa-solid fa-bed"></i>
+                            <p class="ml-1">2 Hab</p>
+                        </div>
+                        <div class="baths flex">
+                            <i class="fa-solid fa-shower"></i>
+                            <p class="ml-1">1 Baño</p>
+                        </div>
+                        <div class="area flex">
+                            <i class="fa-solid fa-maximize"></i>
+                            <p class="ml-1">120 m2</p>
+                        </div>
+                    </div>
+
+
+                    <div class="listing-footer pt-1 pb-1 flex flex-jc-sb flex-ai-c">
+                       
+                        <div class="details pr-1">
+                            <a href="detalle.html" class="btn">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vivienda 3 -->
+                <div class="listing-item">
+                    <div class="listing-image relative">
+                        <img src="assets/images/casa2.png" alt="Listing" class="img-fluid">
+                        <div class="listing-meta absolute flex">
+                            <div class="price">175.000€</div>
+                            <div class="type">En venta</div>
+                        </div>
+                    </div>
+                    <div class="item-title pl-1 pr-1 pt-1 pb-1">
+                        <h3>Villa</h3>
+                    </div>
+                    <div class="address pl-1 pb-1">
+                        <p><i class="fa-solid fa-location-dot"></i> Granada</p>
+                    </div>
+
+                    <div class="item-icons pl-1 pr-1 pb-2 flex flex-jc-sb">
+                        <div class="beds flex">
+                            <i class="fa-solid fa-bed"></i>
+                            <p class="ml-1">3 Hab</p>
+                        </div>
+                        <div class="baths flex">
+                            <i class="fa-solid fa-shower"></i>
+                            <p class="ml-1">2 Baño</p>
+                        </div>
+                        <div class="area flex">
+                            <i class="fa-solid fa-maximize"></i>
+                            <p class="ml-1">179 m2</p>
+                        </div>
+                    </div>
+
+
+                    <div class="listing-footer pt-1 pb-1 flex flex-jc-sb flex-ai-c">
+                        <div class="details pr-1">
+                            <a href="detalle.html" class="btn">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vivienda 4 -->
+                <div class="listing-item">
+                    <div class="listing-image relative">
+                        <img src="assets/images/casa4.jpg" alt="foto" class="img-fluid">
+                        <div class="listing-meta absolute flex">
+                            <div class="price">150.000€</div>
+                            <div class="type">En Venta</div>
+                        </div>
+                    </div>
+                    <div class="item-title pl-1 pr-1 pt-1 pb-1">
+                        <h3>Casa Villa</h3>
+                    </div>
+                    <div class="address pl-1 pb-1">
+                        <p><i class="fa-solid fa-location-dot"></i> Granada</p>
+                    </div>
+
+                    <div class="item-icons pl-1 pr-1 pb-2 flex flex-jc-sb">
+                        <div class="beds flex">
+                            <i class="fa-solid fa-bed"></i>
+                            <p class="ml-1">2 Hab</p>
+                        </div>
+                        <div class="baths flex">
+                            <i class="fa-solid fa-shower"></i>
+                            <p class="ml-1">1 Baño</p>
+                        </div>
+                        <div class="area flex">
+                            <i class="fa-solid fa-maximize"></i>
+                            <p class="ml-1">80 m2</p>
+                        </div>
+                    </div>
+
+
+                    <div class="listing-footer pt-1 pb-1 flex flex-jc-sb flex-ai-c">
+                        <div class="details pr-1">
+                            <a href="detalle.html" class="btn">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vivienda 5 -->
+                <div class="listing-item">
+                    <div class="listing-image relative">
+                        <img src="assets/images/casa2.jpg" alt="Listing" class="img-fluid">
+                        <div class="listing-meta absolute flex">
+                            <div class="price">2000€</div>
+                            <div class="type">En Alquiler</div>
+                        </div>
+                    </div>
+                    <div class="item-title pl-1 pr-1 pt-1 pb-1">
+                        <h3>Casa Familiar</h3>
+                    </div>
+                    <div class="address pl-1 pb-1">
+                        <p><i class="fa-solid fa-location-dot"></i> Granada</p>
+                    </div>
+
+                    <div class="item-icons pl-1 pr-1 pb-2 flex flex-jc-sb">
+                        <div class="beds flex">
+                            <i class="fa-solid fa-bed"></i>
+                            <p class="ml-1">3 Hab</p>
+                        </div>
+                        <div class="baths flex">
+                            <i class="fa-solid fa-shower"></i>
+                            <p class="ml-1">3 Baños</p>
+                        </div>
+                        <div class="area flex">
+                            <i class="fa-solid fa-maximize"></i>
+                            <p class="ml-1">150 m2</p>
+                        </div>
+                    </div>
+
+
+                    <div class="listing-footer pt-1 pb-1 flex flex-jc-sb flex-ai-c">
+                        <div class="details pr-1">
+                            <a href="detalle.html" class="btn">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vivienda 6 -->
+                <div class="listing-item">
+                    <div class="listing-image relative">
+                        <img src="assets/images/casa3.jpg" alt="Listing" class="img-fluid">
+                        <div class="listing-meta absolute flex">
+                            <div class="price">400.000€</div>
+                            <div class="type">En venta</div>
+                        </div>
+                    </div>
+                    <div class="item-title pl-1 pr-1 pt-1 pb-1">
+                        <h3>Villa Moderna</h3>
+                    </div>
+                    <div class="address pl-1 pb-1">
+                        <p><i class="fa-solid fa-location-dot"></i> Granada</p>
+                    </div>
+
+                    <div class="item-icons pl-1 pr-1 pb-2 flex flex-jc-sb">
+                        <div class="beds flex">
+                            <i class="fa-solid fa-bed"></i>
+                            <p class="ml-1">4 Hab</p>
+                        </div>
+                        <div class="baths flex">
+                            <i class="fa-solid fa-shower"></i>
+                            <p class="ml-1">2 Baños</p>
+                        </div>
+                        <div class="area flex">
+                            <i class="fa-solid fa-maximize"></i>
+                            <p class="ml-1">100 m2</p>
+                        </div>
+                    </div>
+
+
+                    <div class="listing-footer pt-1 pb-1 flex flex-jc-sb flex-ai-c">
+                    
+                        <div class="details pr-1">
+                            <a href="detalle.html" class="btn">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="listings pt-2 pb-2">
+        <div class="container">
+            <div class="section-title mb-2">
+                <h2 class="text-center">Sitios Interesantes</h2>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/sevilla.jpg" class="card-img-top" alt="imagen de Sevilla">
+                    <div class="card-body">
+                      <h5 class="card-title">Sevilla</h5>
+                      <p class="card-text">Sevilla es un municipio y una ciudad de España, capital de la provincia homónima y de Andalucía.​ Contaba con 684 164 habitantes en 2023, ​ por lo que es la ciudad más poblada de Andalucía, la cuarta de España según los datos oficiales del INE .​ El municipio tiene una superficie de 141,4 km</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-body-secondary">Ultima actualización hace 5 días</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/granada.jpg" class="card-img-top" alt="imagen de Granada">
+                    <div class="card-body">
+                      <h5 class="card-title">Granada</h5>
+                      <p class="card-text">Granada es una ciudad en la región de Andalucía en el sur de España, en la ladera de las montañas de la Sierra Nevada. Es famosa por sus grandes ejemplos de arquitectura medieval que datan de la ocupación de los moros, en particular, la Alhambra. Esta extensa fortaleza sobre una colina incluye palacios reales, patios y piscinas reflectantes de la dinastía Nazarí y fuentes y huertos en los jardines del Generalife</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-body-secondary">Ultima actualización hace 5 días</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="assets/images/lobres.jpg" class="card-img-top" alt="imagen de Málaga">
+                    <div class="card-body">
+                      <h5 class="card-title">Málaga</h5>
+                      <p class="card-text">Málaga es una ciudad y municipio español, capital de la provincia homónima, situada en la comunidad autónoma de Andalucía</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-body-secondary">Ultima actualización hace 5 días</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+    
+    </section>
+    
+
+    
+    <footer class="footer">
+        <div class="container footer-widgets grid grid-gap">
+            <div class="widget">
+                <h4>Sobre Nosotros</h4>
+                <p>Redes Sociales</p>
+                <div class="social-links mt-1">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="widget">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Soporte al cliente</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="widget contact">
+                <h4>Contacto</h4>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa-solid fa-building"></i></span></li>
+                    <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span></li>
+                    <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>luxuryvillas@gmail.com</li>
+                  </ul>
+            </div>
+        </div>
+        <div class="container-fluid copyright-container mt-1">
+            <div class="container pt-1 pb-1">
+                <div class="left">
+                    <p>Copyright 2024 - Luxury Villas</p>
+                </div>
+                <div class="right">
+                    <p>Politica de Privacidad</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

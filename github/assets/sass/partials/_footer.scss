@@ -1,0 +1,93 @@
+.footer {
+    background: url('../images/footer-bg.jpg') rgba(0,0,0, 0.80);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    padding-top: 2rem;
+
+    .footer-widgets {
+        h4 {
+            color: #ffffff;
+            font-size: $font-20;
+            text-transform: uppercase;
+        }
+        p {
+            color: #ffffff;
+            font-weight: 400;
+        }
+
+        .widget {
+            margin-bottom: 1rem;
+
+            .social-links {
+                a {
+                    color: #ffffff; 
+                    font-size: $font-20;
+                    margin-right: .8rem;
+                }
+            }
+
+            ul {
+                list-style: none;
+                
+                li {
+                    color: #ffffff;
+                    a {
+                        color: #ffffff;
+                    }
+                    
+                }
+            }
+        }
+
+        .contact {
+            ul {
+                li {
+                    line-height: 2.1rem;
+                }
+            }
+        }
+    }
+
+    .copyright-container {
+        background-color: #141312;
+
+        .container {
+            .left {
+                p {
+                    color: #ffffff;
+                    text-align: center;
+                    font-size: $font-15;
+                }
+            }
+
+            .right {
+                p {
+                    color: #ffffff;
+                    text-align: center;
+                    font-size: $font-15;
+                }
+            }
+        }
+
+        @include bp-md {
+            .container {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+    }
+
+    @include bp-md {
+        .footer-widgets {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @include bp-xl {
+        .footer-widgets {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+}

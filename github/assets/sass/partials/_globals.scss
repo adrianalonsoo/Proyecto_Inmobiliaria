@@ -1,0 +1,172 @@
+/// Valores generales
+/// @author Adrian
+/// 
+///Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Chelsea+Market&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-family: 'Anta', Arial, Helvetica, sans-serif;
+    font-size: 100%;
+            box-sizing: border-box;
+    line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+
+
+
+
+
+/// Estilos 
+
+body {
+    margin: 0;
+    font-family: inherit;
+    background-color:white;
+}
+
+///Parrafo
+p {
+    font-size: $font-16;
+    line-height: 1.5rem;
+    color: $main-text-color;
+    font-weight: 500;
+}
+
+b, strong { font-weight: bolder; }
+
+a {
+    font-family: inherit;
+    font-size: $font-16;
+    line-height: 1.8rem;
+    transition: all 0.2s ease-in-out 0s;
+    color: $link-color;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: $link-hv-color;
+    transition: all 0.3s ease;
+  }
+  
+  
+  a:active { color: $link-color; }
+
+::-webkit-input-placeholder {
+    font-size: .8rem;
+    font-style: italic;
+    color: rgba(58, 57, 57, 0.39);
+  }
+  
+  :-ms-input-placeholder {
+    font-size: .8rem;
+    font-style: italic;
+    color: rgba(58, 57, 57, 0.39);
+  }
+  
+  ::-ms-input-placeholder {
+    font-size: .8rem;
+    font-style: italic;
+    color: rgba(58, 57, 57, 0.39);
+  }
+  
+  ::placeholder {
+    font-size: .8rem;
+    font-style: italic;
+    color: rgba(58, 57, 57, 0.39);
+  }
+  
+  :focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+  }
+
+  ///Estilos contenedor
+.container-fluid { width: 100%; margin-right: auto; margin-left: auto; }
+
+.container {
+    margin-right: auto; margin-left: auto;
+
+    @include bp-sm-max {
+      max-width: 540px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+
+    @include bp-sm {
+        max-width: 540px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @include bp-md {
+        max-width: 720px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @include bp-lg {
+        max-width: 960px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @include bp-xl {
+        max-width: 1140px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @include bp-xxl {
+        max-width: 1380px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/// Input 
+input[type=text] {
+  width: 100%;
+  padding: 11.5px 6px;
+  border-radius: 0;
+  border: 1px solid rgba(204, 204, 204, 0.4);
+  font-size: $font-14;
+}
+
+/// Select 
+.custom-select {
+  select {
+      width: 100%;
+      padding: 10.5px 6px;
+      border-radius: 0;
+      border: 1px solid rgba(204, 204, 204, 0.4);
+      font-size: $font-14;
+  }
+}
+
+/// Botones
+.btn {
+  background-color: $main-accent-color;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0px;
+  font-weight: 500;
+  width: auto;
+  font-size: $font-16;
+  padding: 0.64rem 1.5rem;
+
+  &:hover {
+      background-color: $link-hv-color;
+      color: white;
+  }
+}
