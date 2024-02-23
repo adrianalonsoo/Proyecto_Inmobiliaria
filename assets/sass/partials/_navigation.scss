@@ -1,0 +1,177 @@
+#header {
+    background-color: $text-white;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.452);
+
+    .logo-wrapper {
+
+        img {
+            height: 60px;
+        }
+    }
+
+    nav {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        /// Mostrar movil por debajo de 768px
+        .mobile-menu-wrapper {
+            z-index: 1000;
+            
+            .toggler {
+                i {
+                    color: $main-text-color;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                }
+            }
+
+            .mobile-menu {
+                background-color: #F2F2F2;
+                width: 100%;
+                top: 102px;
+                left: 0;
+                right: 0;
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        border-bottom: 1px solid rgba(204, 204, 204, 0.61);
+                        padding: .5rem 1rem;
+                        transition: all .3s ease-in-out;
+
+                        &:hover {
+                            background-color: #d8d6d6;
+                        }
+                        
+                        a {
+                            font-size: $font-14;
+                            line-height: 30px;
+                            font-weight: normal;
+                            color: $main-text-color;
+                            display: block;
+
+                            &:active {
+                                color: $link-color;
+                            }
+
+                            &:hover {
+                                color: $link-hv-color;
+                            }
+                        }
+
+                        i {
+                            font-size: $font-13;
+                        }
+
+                        ul {
+                            li {
+                                &:hover {
+                                    background-color: #ccc;
+
+                                    a:hover {
+                                        color: $main-text-color;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+               
+            }
+        }
+
+
+        /// ocultar menu para 768 px
+        @include bp-md {
+            .mobile-menu-wrapper {
+                display: none;
+            }
+        }
+
+        /// ocultar menu escritorio por debajo de 768px
+        @include bp-md-max {
+            .menu-wrapper {
+                display: none;
+            }
+        }
+
+        /// Mostar menu
+        @include bp-md {
+            .menu-wrapper {
+
+                ul {
+                    list-style: none;
+                    min-height: 2rem;
+
+                    li {  
+                        display: block;
+                            
+                        a {
+                            color: $main-text-color;
+                            font-size: $font-15;
+                            font-weight: 600;
+                            display: block;
+                            line-height: 40px;
+
+                            &:active {
+                                color: $link-color;
+                            }
+
+                            &:hover {
+                                color: $link-hv-color;
+                            }
+
+                            i {
+                                font-size: $font-13;
+                            }
+                        }
+
+                        ul {
+                            background-color: #F2F2F2;
+                            width: 200px;
+
+                            li {
+                                border-bottom: 1px solid rgba(204, 204, 204, 0.61);
+                                padding: .5rem 1rem;
+                                transition: all .3s ease-in-out;
+
+                                &:hover {
+                                    background-color: #d8d6d6;
+                                }
+                                
+                                a {
+                                    font-size: $font-14;
+                                    line-height: 30px;
+                                    font-weight: normal;
+
+                                    &:hover {
+                                        color: $main-text-color;
+                                    }
+                                }
+                            }
+
+                            li:not(:last-child) {
+                                margin-right: 0rem;
+                            }
+
+                            
+                        }
+
+                        &:hover {
+                            & > ul {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    li:not(:last-child) {
+                        margin-right: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

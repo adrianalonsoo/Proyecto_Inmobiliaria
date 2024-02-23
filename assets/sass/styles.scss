@@ -1,0 +1,12 @@
+@import "partials/common/variables";
+@import "partials/common/mixins";
+@import "partials/common/globals";
+@import "partials/common/navigation";
+@import "partials/common/utilities";
+@import "partials/home/home";
+@import "partials/home/categories";
+@import "partials/home/listings";
+
+@import "partials/home/detalle";
+@import "partials/common/footer";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

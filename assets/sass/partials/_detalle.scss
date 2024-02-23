@@ -1,0 +1,20 @@
+.container{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 80px;
+    margin-bottom: 3rem;
+    
+    .detalle{
+         .card{
+            display: flex;
+            justify-content: space-between;
+            
+            a{
+                font-size: $font-15;
+                color: var(link-color)
+            }
+        }
+    }
+}

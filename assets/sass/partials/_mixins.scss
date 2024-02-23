@@ -1,0 +1,72 @@
+// MEDIA BREAKPOINTS
+
+/// Min-width from 576px or 36em
+@mixin bp-sm {
+    @media (min-width: 36em) {
+        @content;
+    }
+}
+
+/// Min-width from 768px
+@mixin bp-md {
+    @media (min-width: 48em) {
+        @content;
+    }
+}
+
+/// Min-width from 992px
+@mixin bp-lg {
+    @media (min-width: 62em) {
+        @content;
+    }
+}
+
+/// Min-width from 1200px
+@mixin bp-xl {
+    @media (min-width: 75em) {
+        @content;
+    }
+}
+
+/// Min-width from 1400px
+@mixin bp-xxl {
+    @media (min-width: 87.5em) {
+        @content;
+    }
+}
+
+
+/// Max-width up to 576px or 36em
+@mixin bp-sm-max {
+    @media (max-width: 36em) {
+        @content;
+    }
+}
+
+/// Max-width up to 768px
+@mixin bp-md-max {
+    @media (max-width: 48em) {
+        @content;
+    }
+}
+
+/// Max-width up to 992px
+@mixin bp-lg-max {
+    @media (max-width: 62em) {
+        @content;
+    }
+}
+
+/// Max-width up to 1200px
+@mixin bp-xl-max {
+    @media (max-width: 75em) {
+        @content;
+    }
+}
+
+/// Max-width up to 1400px
+@mixin bp-xxl-max {
+    @media (max-width: 87.5em) {
+        @content;
+    }
+}
